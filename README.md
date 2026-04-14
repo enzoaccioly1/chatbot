@@ -15,7 +15,7 @@ Um chatbot que utiliza a API do Google Gemini para simular um professor de hist�
 
 - **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Python 3.9+)
 - **IA:** [Google Generative AI (Gemini)](https://ai.google.dev/)
-- **Frontend:** HTML5, CSS3 (Variáveis nativas) e JavaScript (Vanilla JS)
+- **Frontend:** HTML5, CSS3 e JavaScript
 - **Servidor:** Uvicorn
 
 ## 📋 Pré-requisitos
@@ -46,8 +46,13 @@ Crie um arquivo chamado ```.env``` na raiz do projeto e adicione sua chave da AP
 GEMINIKEY=SUACHAVEAQUI
 ```
 
-### ⚠️ Não vaze sua chave: 
+### ⚠️ Não vaze sua chave:
+
 Em caso de compartilhamento, crie também um arquivo chamado ```.gitignore``` na raiz e escreva ```.env``` dentro dele, para impedir que o Git envie sua chave para o repositório público.
+
+### 💡 Dica (ao criar sua chave):
+
+Não se esqueça de adicionar um faturamento ao projeto para que a chave seja utilizável.
 
 ## 🏃 Como Executar
 
@@ -56,4 +61,14 @@ uvicorn main:app --reload
 ```
 
 Em seguida, acesse ```http://127.0.0.1:8000``` no seu navegador
+
+### 💡 Dica (se der algum erro de comando não reconhecido): 
+
+Dependendo de como o Python foi instalado (especialmente no Windows), o terminal pode não reconhecer comandos de pacotes Python. Se isso acontecer, você pode forçar a execução através do módulo do Python usando ```py -m``` ou ```python -m```, por exemplo:
+
+```bash
+py -m uvicorn main:app --reload
+#ou
+python -m uvicorn main:app --reload
+```
 
