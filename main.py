@@ -22,7 +22,7 @@ DIRETRIZES DE COMPORTAMENTO:
 
 try:
 
-    model = genai.GenerativeModel(model_name = 'gemini-3.1-flash-lite-preview', system_instruction = instrucao)
+    model = genai.GenerativeModel(model_name = 'gemini-2.5-flash', system_instruction = instrucao)
 
 except Exception as e:
 
@@ -61,7 +61,7 @@ async def sendMessage(data: ChatAction):
     
     try:
 
-        response = chatsSalvos[data.chatID].send_message(data.message)
+        response = await chatsSalvos[data.chatID].send_message_async(data.message)
         return {"response": response.text}
     
     except Exception as e:
@@ -89,7 +89,7 @@ async def deleteChat(chatID: str):
     raise HTTPException(status_code = 404, detail = "Não encontrado")
 
 @app.get("/chat/history/{chatID}")
-async def get_history(chatID: str):
+async def getHistory(chatID: str):
 
     if chatID not in chatsSalvos:
         raise HTTPException(status_code = 404, detail = "Chat não encontrado")
