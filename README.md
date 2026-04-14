@@ -39,13 +39,15 @@ pip install fastapi uvicorn google-generativeai python-dotenv
 ```
 
 3. **Configure as variáveis de ambiente:**
+
 Crie um arquivo chamado ```.env``` na raiz do projeto e adicione sua chave da API:
 
 ```bash
 GEMINIKEY=SUACHAVEAQUI
 ```
-   
-⚠️ Não vaze sua chave: Em caso de crie também um arquivo chamado ```.gitignore``` na raiz e escreva ```.env``` dentro dele, para impedir que o Git envie sua chave para o repositório público.
+
+### ⚠️ Não vaze sua chave: 
+Em caso de compartilhamento, crie também um arquivo chamado ```.gitignore``` na raiz e escreva ```.env``` dentro dele, para impedir que o Git envie sua chave para o repositório público.
 
 ## 🏃 Como Executar
 
