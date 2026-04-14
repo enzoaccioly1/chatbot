@@ -7,7 +7,7 @@ Um chatbot que utiliza a API do Google Gemini para simular um professor de hist�
 ## 🚀 Funcionalidades
 
 - **Chat Persistente**
-- **Contexto**
+- **Contexto Histórico**
 - **Interface Moderna**
 - **Suporte para Markdown**
 
