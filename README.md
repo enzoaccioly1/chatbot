@@ -28,7 +28,7 @@ Um chatbot que utiliza a API do Google Gemini para simular um professor de hist√
 1. **Clone o reposit√≥rio:**
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-seu-repositorio.git
+git clone https://github.com/enzoaccioly1/chatbot.git
 cd chatbot
 ```
 
