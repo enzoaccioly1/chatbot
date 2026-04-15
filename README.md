@@ -35,7 +35,7 @@ cd chatbot
 2. **Instale as dependências:**
 
 ```bash
-pip install fastapi uvicorn google-generativeai python-dotenv
+pip install fastapi uvicorn google-generativeai python-dotenv sqlalchemy
 ```
 
 3. **Configure as variáveis de ambiente:**
