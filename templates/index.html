@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Chatbot de Historiografia</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="sidebar">
+
+        <h2>Historiografia</h2>
+
+        <div class="actions">
+
+            <input type="text" id="chatNameInput" placeholder="Nome do chat...">
+            <button onclick="apiCreateChat()">Novo Chat</button>
+
+        </div>
+
+        <br>
+
+        <div id="chatList"></div>
+
+    </div>
+
+    <div id="main">
+
+        <header id="currentChatHeader">Bem-vindo, Historiador</header>
+
+        <div id="chatWindow"></div>
+
+        <div id="inputArea">
+
+            <input type="text" id="userInput" placeholder="Digite sua dúvida histórica...">
+            <button onclick="apiSendMessage()">Enviar</button>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
